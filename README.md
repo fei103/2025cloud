@@ -44,5 +44,3 @@ docker run -d -p 5000:5000 fifi1030/2025cloud:flaskapp
 * -d：讓容器在背景模式執行
 * -p：指定主機與容器的 Port 對應
 * Image Name：使用先前打包好的 Image
-
-
