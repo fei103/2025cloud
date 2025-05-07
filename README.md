@@ -52,13 +52,13 @@ docker run -d -p 5000:5000 fifi1030/2025cloud:flaskapp
    * 建立 Pull Request
 
    自動化產生流程：
-   * 當 Push 到 master 分支或建立 Pull Request 時，自動執行：
+   * 當 Push 到 master 分支時，自動執行：
        * 檢查程式碼
        * 登入 DockerHub
        * Build nginx.dockerfile -> 產生 Tag：2025cloud:nginx
-       * 成功後自動 Push 至 DockerHub
+          * 成功後自動 Push 至 DockerHub
        * Build flaskapp.dockerfile -> 產生 Tag：2025cloud:flaskapp
-       * 成功後自動 Push 至 DockerHub
+          * 成功後自動 Push 至 DockerHub
 
 2. Tag 的選擇邏輯
    | Dockerfile | 產生的 Tag |
