@@ -46,7 +46,7 @@ docker run -d -p 5000:5000 fifi1030/2025cloud:flaskapp
 * Image Name：使用先前打包好的 Image
 
 ## 圖文的方式描述目前專案自動化產生 Container Image 的邏輯，以及 Tag 的選擇邏輯
-1. 自動化產生 Container Image 的邏輯
+1. 自動化產生 Container Image 的邏輯  
    觸發事件有以下兩種：
    * Push 到 master
    * 建立 Pull Request
@@ -59,7 +59,7 @@ docker run -d -p 5000:5000 fifi1030/2025cloud:flaskapp
           * 成功後自動 Push 至 DockerHub
        * Build flaskapp.dockerfile -> 產生 Tag：2025cloud:flaskapp
           * 成功後自動 Push 至 DockerHub
-
+         
 2. Tag 的選擇邏輯
    | Dockerfile | 產生的 Tag |
    | :----: | :----: |
